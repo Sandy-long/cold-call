@@ -19,9 +19,9 @@
         
         .card-container {
             display: grid;
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
             gap: 25px;
-            max-width: 600px;
+            max-width: 1200px;
             margin-top: 30px;
         }
         
@@ -96,6 +96,14 @@
             font-weight: bold;
         }
         
+        .highlight-blue {
+            background-color: #4285F4;
+            color: #fff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
         h1 {
             color: #4285F4;
             font-size: 2.5rem;
@@ -112,6 +120,10 @@
         }
 
         @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
             .card {
                 min-height: 300px;
             }
@@ -134,7 +146,7 @@
     <div class="divider"></div>
     
     <div class="card-container">
-        <!-- Single Card -->
+        <!-- First Card -->
         <div class="card">
             <div class="card-title">Blueberry Sales Pitch</div>
             
@@ -191,6 +203,78 @@
                 
                 <div class="dialogue-line">
                     <div class="speaker-left">"Well, we hope to hear from you soon. Goodbye."</div>
+                    <div class="speaker-right"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Second Card -->
+        <div class="card">
+            <div class="card-title">Price Negotiation</div>
+            
+            <div class="card-content">
+                <div class="dialogue-line">
+                    <div class="speaker-left">"This is Ali. I'm sorry to receive your message."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Yes, well. I thought we were doing good business and then another company called me and offered me a much better deal."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Yes, I understand. I'm sorry to hear you're not happy with our price. But hopefully we can <span class="highlight-yellow">sort something out</span>?"</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Oh yes?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"You are a valued customer, and your business is very important to us."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"So?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"So, I've done some calculations and we can <span class="highlight-red">offer you a better price</span>."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"But the other company can offer us a good price."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"I'm sure they can, but at Ali Trading <span class="highlight-blue">we pride ourselves on quality products and good value for money</span> and I think we can <span class="highlight-yellow">match the price</span>. In fact, I know we can beat it."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"I see. That's good to hear but..."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"We'll <span class="highlight-red">give you an extra 10% discount</span> - but obviously <span class="highlight-yellow">we would like you to make a bigger order</span>."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Oh, a bigger order. I will have to think about this."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Yes, of course, but <span class="highlight-blue">please let me know as soon as you can before someone else snaps up this offer</span>."</div>
                     <div class="speaker-right"></div>
                 </div>
             </div>
