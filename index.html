@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Telephone Practice</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            max-width: 600px;
+            margin-top: 30px;
+        }
+        
+        .card {
+            background-color: #222;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(255,255,255,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            min-height: 350px;
+            border: 1px solid #444;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(255,255,255,0.15);
+        }
+        
+        .card-title {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 600;
+            color: #4285F4;
+        }
+        
+        .card-content {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ddd;
+        }
+        
+        .dialogue-line {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .speaker-left {
+            font-weight: bold;
+            color: #FBBC05;
+            margin-right: 10px;
+            width: 45%;
+            text-align: right;
+        }
+        
+        .speaker-right {
+            font-weight: bold;
+            color: #EA4335;
+            margin-left: 10px;
+            width: 45%;
+            text-align: left;
+        }
+        
+        .highlight-yellow {
+            background-color: #FBBC05;
+            color: #000;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .highlight-red {
+            background-color: #EA4335;
+            color: #fff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        h1 {
+            color: #4285F4;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        
+        .divider {
+            height: 4px;
+            width: 100px;
+            background: linear-gradient(to right, #4285F4, #34A853);
+            margin-bottom: 30px;
+            border-radius: 2px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                min-height: 300px;
+            }
+            
+            .dialogue-line {
+                flex-direction: column;
+            }
+            
+            .speaker-left,
+            .speaker-right {
+                width: 100%;
+                text-align: left;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Business Telephone Conversation</h1>
+    <div class="divider"></div>
+    
+    <div class="card-container">
+        <!-- Single Card -->
+        <div class="card">
+            <div class="card-title">Blueberry Sales Pitch</div>
+            
+            <div class="card-content">
+                <div class="dialogue-line">
+                    <div class="speaker-left">Caller:</div>
+                    <div class="speaker-right">"Hello. Is it possible to speak English?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Yes?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Great! Are you the person who <span class="highlight-yellow">purchases fruit</span> for your company?"</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"I am. How can I help you?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Yes, can you <span class="highlight-red">spare a few minutes</span> of your time? My name is Anna. How are you today?"</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Good, thank you."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"That's good. I'd like to tell you about our great organic blueberries."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Oh yes?"</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Our company is called Ali Trading and we are the No. 1 blueberry seller in China. We're so proud of our product that we've decided to let the European market enjoy it too... So thank you for your time. I hope you may consider us when you next purchase it."</div>
+                    <div class="speaker-right"></div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left"></div>
+                    <div class="speaker-right">"Ok. We will certainly consider your company."</div>
+                </div>
+                
+                <div class="dialogue-line">
+                    <div class="speaker-left">"Well, we hope to hear from you soon. Goodbye."</div>
+                    <div class="speaker-right"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // This space can be used for any interactive functionality if needed
+        });
+    </script>
+</body>
+</html>
